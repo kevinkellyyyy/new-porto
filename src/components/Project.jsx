@@ -15,8 +15,8 @@ const Project = () => {
       name="project"
       className="w-full text-gray-300 bg-[#0a192f]"
     >
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
+      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full pb-10">
+        <div className="pb-8" data-aos="fade-right">
           <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
             Project
           </p>
@@ -24,10 +24,10 @@ const Project = () => {
         </div>
 
         {/* Container */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4" data-aos="zoom-in">
           {/* Grid Item */}
           <div
-            style={{ backgroundImage: `url(${linistoref})` }}
+            style={{ backgroundImage: `url(${linistoref})` }} data-aos="zoom-in" data-aos-delay="100"
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
@@ -36,7 +36,7 @@ const Project = () => {
                 LiniStore
               </span>
               <div className="text-center">
-                <a href="https://linistore.id/" target="_blank">
+                <a href="https://linistore.id/" target="_blank" rel="noopener noreferrer">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Detail
                   </button>
@@ -49,7 +49,7 @@ const Project = () => {
           </div>
           {/* Grid Item */}
           <div
-            style={{ backgroundImage: `url(${kellsocmed})` }}
+            style={{ backgroundImage: `url(${kellsocmed})` }} data-aos="zoom-in" data-aos-delay="200"
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
@@ -58,12 +58,12 @@ const Project = () => {
                 Kell's Socmed
               </span>
               <div className="text-center">
-                <a href="https://kells-socmed.vercel.app/" target="_blank">
+                <a href="https://kells-socmed.vercel.app/" target="_blank" rel="noopener noreferrer">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
                   </button>
                 </a>
-                <a href="https://github.com/kevinkellyyyy/codify-test-frontend" target="_blank">
+                <a href="https://github.com/kevinkellyyyy/codify-test-frontend" target="_blank" rel="noopener noreferrer">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Detail
                   </button>
@@ -76,7 +76,7 @@ const Project = () => {
           </div>
           {/* Grid Item */}
           <div
-            style={{ backgroundImage: `url(${sentimenanf})` }}
+            style={{ backgroundImage: `url(${sentimenanf})` }} data-aos="zoom-in" data-aos-delay="300"
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
@@ -85,12 +85,12 @@ const Project = () => {
                 (Thesis Project) Sentiment analysis in Ecommerce Platform
               </span>
               <div className="text-center">
-                <a href="http://www.warse.org/IJATCSE/static/pdf/file/ijatcse171942020.pdf" target="_blank">
+                <a href="http://www.warse.org/IJATCSE/static/pdf/file/ijatcse171942020.pdf" target="_blank" rel="noopener noreferrer">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Published Paper
                   </button>
                 </a>
-                <a href="https://drive.google.com/drive/folders/1IX16XzhDV_HpDFSXWKMGeEmz_UT6-pFM?usp=sharing" target="_blank">
+                <a href="https://drive.google.com/drive/folders/1IX16XzhDV_HpDFSXWKMGeEmz_UT6-pFM?usp=sharing" target="_blank" rel="noopener noreferrer">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Detail
                   </button>
@@ -103,7 +103,7 @@ const Project = () => {
           </div>
           {/* Grid Item */}
           <div
-            style={{ backgroundImage: `url(${freecodecamp})` }}
+            style={{ backgroundImage: `url(${freecodecamp})` }} data-aos="zoom-in" data-aos-delay="400"
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
@@ -112,17 +112,27 @@ const Project = () => {
                 FreeCodeCamp Front End Development Libraries certification project (click one of project below to see demo)
               </span>
               <div className="mt-2">
-                <a href="https://codepen.io/kevinkellyyyy/pen/gOoeXzX" target="_blank" className="hoover:underline-offset-2">Random Quote Machine</a><br />
-                <a href="https://codepen.io/kevinkellyyyy/pen/dyJeyPy" target="_blank" className="hoover:underline-offset-2">Markdown Previewer</a><br />
-                <a href="https://codepen.io/kevinkellyyyy/pen/LYerVNd" target="_blank" className="hoover:underline-offset-2">Drumpad Machine</a><br />
-                <a href="https://codepen.io/kevinkellyyyy/pen/VwyxVom" target="_blank" className="hoover:underline-offset-2">JavaScript Calculator</a><br />
-                <a href="https://codepen.io/kevinkellyyyy/pen/gOoKpME" target="_blank" className="hoover:underline-offset-2">Interval Timer</a>
+                <div className="text-sm hover:text-white hover:font-bold">
+                  <a href="https://codepen.io/kevinkellyyyy/pen/gOoeXzX" target="_blank" rel="noopener noreferrer">Random Quote Machine</a><br />
+                </div>
+                <div className="text-sm hover:text-white hover:font-bold">
+                  <a href="https://codepen.io/kevinkellyyyy/pen/dyJeyPy" target="_blank" rel="noopener noreferrer">Markdown Previewer</a><br />
+                </div>
+                <div className="text-sm hover:text-white hover:font-bold">
+                  <a href="https://codepen.io/kevinkellyyyy/pen/LYerVNd" target="_blank" rel="noopener noreferrer">Drumpad Machine</a><br />
+                </div>
+                <div className="text-sm hover:text-white hover:font-bold">
+                  <a href="https://codepen.io/kevinkellyyyy/pen/VwyxVom" target="_blank" rel="noopener noreferrer">JavaScript Calculator</a><br />
+                </div>
+                <div className="text-sm hover:text-white hover:font-bold">
+                  <a href="https://codepen.io/kevinkellyyyy/pen/gOoKpME" target="_blank" rel="noopener noreferrer">Interval Timer</a>
+                </div>
               </div>
             </div>
           </div>
           {/* Grid Item */}
           <div
-            style={{ backgroundImage: `url(${potretbudayaf})` }}
+            style={{ backgroundImage: `url(${potretbudayaf})` }} data-aos="zoom-in" data-aos-delay="500"
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
@@ -131,7 +141,7 @@ const Project = () => {
                 Ragam Budaya
               </span>
               <div className="text-center">
-                <a href="https://play.google.com/store/apps/details?id=app.hatchoko.ragambudaya" target="_blank">
+                <a href="https://play.google.com/store/apps/details?id=app.hatchoko.ragambudaya" target="_blank" rel="noopener noreferrer">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Detail
                   </button>
@@ -144,7 +154,7 @@ const Project = () => {
           </div>
           {/* Grid Item */}
           <div
-            style={{ backgroundImage: `url(${kellsmoviezf})` }}
+            style={{ backgroundImage: `url(${kellsmoviezf})` }} data-aos="zoom-in" data-aos-delay="600"
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
@@ -153,12 +163,12 @@ const Project = () => {
                 Kell's Moviez
               </span>
               <div className="text-center">
-                <a href="https://kellsmovies.surge.sh/" target="_blank">
+                <a href="https://kellsmovies.surge.sh/" target="_blank" rel="noopener noreferrer">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
                   </button>
                 </a>
-                <a href="https://github.com/kevinkellyyyy/kellsmoviez" target="_blank">
+                <a href="https://github.com/kevinkellyyyy/kellsmoviez" target="_blank" rel="noopener noreferrer">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Detail
                   </button>
@@ -171,7 +181,7 @@ const Project = () => {
           </div>
           {/* Grid Item */}
           <div
-            style={{ backgroundImage: `url(${reactjslocalcrudf})` }}
+            style={{ backgroundImage: `url(${reactjslocalcrudf})` }} data-aos="zoom-in" data-aos-delay="700"
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
@@ -180,12 +190,12 @@ const Project = () => {
                 Simple React JS contact CRUD
               </span>
               <div className="text-center">
-                <a href="https://kevinkellyyyy.github.io/kevinkelly-phi-frontend-test/" target="_blank">
+                <a href="https://kevinkellyyyy.github.io/kevinkelly-phi-frontend-test/" target="_blank" rel="noopener noreferrer">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
                   </button>
                 </a>
-                <a href="https://github.com/kevinkellyyyy/kevinkelly-phi-frontend-test" target="_blank">
+                <a href="https://github.com/kevinkellyyyy/kevinkelly-phi-frontend-test" target="_blank" rel="noopener noreferrer">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Detail
                   </button>
@@ -198,7 +208,7 @@ const Project = () => {
           </div>
           {/* Grid Item */}
           <div
-            style={{ backgroundImage: `url(${kellnewsf})` }}
+            style={{ backgroundImage: `url(${kellnewsf})` }} data-aos="zoom-in" data-aos-delay="800"
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
@@ -207,7 +217,7 @@ const Project = () => {
                 Kell's News
               </span>
               <div className="text-center">
-                <a href="https://github.com/kevinkellyyyy/kellsnews" target="_blank">
+                <a href="https://github.com/kevinkellyyyy/kellsnews" target="_blank" rel="noopener noreferrer">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Detail
                   </button>
@@ -219,7 +229,7 @@ const Project = () => {
             </div>
           </div>
           <div
-            style={{ backgroundImage: `url(${kellbookf})` }}
+            style={{ backgroundImage: `url(${kellbookf})` }} data-aos="zoom-in" data-aos-delay="900"
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
@@ -228,7 +238,7 @@ const Project = () => {
                 Kell's Books
               </span>
               <div className="text-center">
-                <a href="https://github.com/kevinkellyyyy/kellsbooks" target="_blank">
+                <a href="https://github.com/kevinkellyyyy/kellsbooks" target="_blank" rel="noopener noreferrer">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Detail
                   </button>

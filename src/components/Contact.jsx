@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { send } from "emailjs-com";
 import {
-  FaBars,
-  FaTimes,
   FaLinkedin,
   FaGithub,
   FaInstagram,
@@ -22,7 +20,7 @@ const Contact = () => {
   const onSubmit = (e) => {
     // belum ditambahin toast sedang mengirim dan sukses
     e.preventDefault();
-    {/* --- METHOD TO SEND THE MAIL --- */}
+    // --- METHOD TO SEND THE MAIL ---
     send("service_fdmwqx2", "template_q5a6mn9", toSend, "jmAvO4luUhCDaEkrD")
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
@@ -41,7 +39,7 @@ const Contact = () => {
       name="contact"
       className="w-full h-screen bg-[#0a192f] flex justify-center items-center p-4"
     >
-      <form onSubmit={onSubmit} className="flex flex-col max-w-[600px] w-full">
+      <form onSubmit={onSubmit} className="flex flex-col max-w-[600px] w-full" data-aos="fade-right">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300">
             Contact
@@ -50,7 +48,7 @@ const Contact = () => {
             <div>
               <a
                 className="flex items-center w-full text-gray-300"
-                href="https://www.linkedin.com/in/kevin-isyanta-b5962117b/" target="_blank"
+                href="https://www.linkedin.com/in/kevin-isyanta-b5962117b/" target="_blank" rel="noopener noreferrer"
               >
                 <FaLinkedin size={30} /> &nbsp;Kevin Isyanta
               </a>
@@ -58,7 +56,7 @@ const Contact = () => {
             <div>
               <a
                 className="flex items-center w-full text-gray-300"
-                href="https://github.com/kevinkellyyyy" target="_blank"
+                href="https://github.com/kevinkellyyyy" target="_blank" rel="noopener noreferrer"
               >
                 <FaGithub size={30} /> &nbsp;kevinkellyyyy
               </a>
@@ -66,7 +64,7 @@ const Contact = () => {
             <div>
               <a
                 className="flex items-center w-full text-gray-300"
-                href="https://wa.me/6282297017693" target="_blank"
+                href="https://wa.me/6282297017693" target="_blank" rel="noopener noreferrer"
               >
                 <FaWhatsapp size={30} /> &nbsp;082297017693
               </a>
@@ -74,7 +72,7 @@ const Contact = () => {
             <div>
               <a
                 className="flex items-center w-full text-gray-300"
-                href="mailto:kellyisyanta@gmail.com" target="_blank"
+                href="mailto:kellyisyanta@gmail.com" target="_blank" rel="noopener noreferrer"
               >
                 <MdAlternateEmail size={30} /> &nbsp;kellyisyanta@gmail.com
               </a>
@@ -82,7 +80,7 @@ const Contact = () => {
             <div>
               <a
                 className="flex items-center w-full text-gray-300"
-                href="https://www.instagram.com/kevinkellyyyy" target="_blank"
+                href="https://www.instagram.com/kevinkellyyyy" target="_blank" rel="noopener noreferrer"
               >
                 <FaInstagram size={30} /> &nbsp;@kevinkellyyyy
               </a>
@@ -90,7 +88,7 @@ const Contact = () => {
             <div>
               <a
                 className="flex items-center w-full text-gray-300"
-                href="https://steamcommunity.com/id/zhypr" target="_blank"
+                href="https://steamcommunity.com/id/zhypr" target="_blank" rel="noopener noreferrer"
               >
                 <FaSteam size={30} /> &nbsp;zhypr
               </a>
