@@ -4,7 +4,7 @@ import sentimenanf from "../assets/sentimenanf.jpg";
 import kellsmoviezf from "../assets/kellsmoviezf.jpg";
 import reactjslocalcrudf from "../assets/reactjslocalcrudf.JPG";
 import kellnewsf from "../assets/kellnewsf.jpg";
-import kellbookf from "../assets/kellbookf.jpg";
+import moviewatchlist from "../assets/moviewatchlist.JPG";
 import kellsocmed from "../assets/kellsocmed.JPG";
 import potretbudayaf from "../assets/potretbudayaf.jpg";
 import freecodecamp from "../assets/freecodecamp.JPG";
@@ -27,7 +27,7 @@ const Project = () => {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4" data-aos="zoom-in">
           {/* Grid Item */}
           <div
-            style={{ backgroundImage: `url(${linistoref})` }} data-aos="zoom-in" data-aos-delay="100"
+            style={{ backgroundImage: `url(${linistoref})` }} data-aos="zoom-in" data-aos-delay="50"
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
@@ -49,7 +49,29 @@ const Project = () => {
           </div>
           {/* Grid Item */}
           <div
-            style={{ backgroundImage: `url(${kellsocmed})` }} data-aos="zoom-in" data-aos-delay="200"
+            style={{ backgroundImage: `url(${moviewatchlist})` }} data-aos="zoom-in" data-aos-delay="450"
+            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+          >
+            {/* Hover Effects */}
+            <div className="opacity-0 p-3 text-center group-hover:opacity-100">
+              <span className="text-2xl font-bold text-white tracking-wider">
+                Movie Watchlist
+              </span>
+              <div className="text-center">
+                <a href="https://kevinkellyyyy-movie-watchlist.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Demo
+                  </button>
+                </a>
+              </div>
+              <span className="text-sm font-bold text-white tracking-wider">
+                Simple movie watchlist app with search movie through fetch API from TMDB and react contex with local storage
+              </span>
+            </div>
+          </div>
+          {/* Grid Item */}
+          <div
+            style={{ backgroundImage: `url(${kellsocmed})` }} data-aos="zoom-in" data-aos-delay="100"
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
@@ -76,7 +98,7 @@ const Project = () => {
           </div>
           {/* Grid Item */}
           <div
-            style={{ backgroundImage: `url(${sentimenanf})` }} data-aos="zoom-in" data-aos-delay="300"
+            style={{ backgroundImage: `url(${sentimenanf})` }} data-aos="zoom-in" data-aos-delay="150"
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
@@ -103,36 +125,29 @@ const Project = () => {
           </div>
           {/* Grid Item */}
           <div
-            style={{ backgroundImage: `url(${freecodecamp})` }} data-aos="zoom-in" data-aos-delay="400"
+            style={{ backgroundImage: `url(${freecodecamp})` }} data-aos="zoom-in" data-aos-delay="200"
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
             <div className="opacity-0 p-3 text-center group-hover:opacity-100">
               <span className="text-md font-bold text-white tracking-wider">
-                FreeCodeCamp Front End Development Libraries certification project (click one of project below to see demo)
+                FreeCodeCamp Projects
               </span>
-              <div className="mt-2">
-                <div className="text-sm hover:text-white hover:font-bold">
-                  <a href="https://codepen.io/kevinkellyyyy/pen/gOoeXzX" target="_blank" rel="noopener noreferrer">Random Quote Machine</a><br />
-                </div>
-                <div className="text-sm hover:text-white hover:font-bold">
-                  <a href="https://codepen.io/kevinkellyyyy/pen/dyJeyPy" target="_blank" rel="noopener noreferrer">Markdown Previewer</a><br />
-                </div>
-                <div className="text-sm hover:text-white hover:font-bold">
-                  <a href="https://codepen.io/kevinkellyyyy/pen/LYerVNd" target="_blank" rel="noopener noreferrer">Drumpad Machine</a><br />
-                </div>
-                <div className="text-sm hover:text-white hover:font-bold">
-                  <a href="https://codepen.io/kevinkellyyyy/pen/VwyxVom" target="_blank" rel="noopener noreferrer">JavaScript Calculator</a><br />
-                </div>
-                <div className="text-sm hover:text-white hover:font-bold">
-                  <a href="https://codepen.io/kevinkellyyyy/pen/gOoKpME" target="_blank" rel="noopener noreferrer">Interval Timer</a>
-                </div>
+              <div className="text-center">
+                <a href="https://kevinkellyyyy-fcc-projects.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Detail
+                  </button>
+                </a>
               </div>
+              <span className="text-sm font-bold text-white tracking-wider">
+                FreeCodeCamp Front End Development Libraries certification project
+              </span>
             </div>
           </div>
           {/* Grid Item */}
           <div
-            style={{ backgroundImage: `url(${potretbudayaf})` }} data-aos="zoom-in" data-aos-delay="500"
+            style={{ backgroundImage: `url(${potretbudayaf})` }} data-aos="zoom-in" data-aos-delay="250"
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
@@ -154,7 +169,7 @@ const Project = () => {
           </div>
           {/* Grid Item */}
           <div
-            style={{ backgroundImage: `url(${kellsmoviezf})` }} data-aos="zoom-in" data-aos-delay="600"
+            style={{ backgroundImage: `url(${kellsmoviezf})` }} data-aos="zoom-in" data-aos-delay="300"
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
@@ -181,7 +196,7 @@ const Project = () => {
           </div>
           {/* Grid Item */}
           <div
-            style={{ backgroundImage: `url(${reactjslocalcrudf})` }} data-aos="zoom-in" data-aos-delay="700"
+            style={{ backgroundImage: `url(${reactjslocalcrudf})` }} data-aos="zoom-in" data-aos-delay="350"
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
@@ -208,7 +223,7 @@ const Project = () => {
           </div>
           {/* Grid Item */}
           <div
-            style={{ backgroundImage: `url(${kellnewsf})` }} data-aos="zoom-in" data-aos-delay="800"
+            style={{ backgroundImage: `url(${kellnewsf})` }} data-aos="zoom-in" data-aos-delay="400"
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
@@ -225,27 +240,6 @@ const Project = () => {
               </div>
               <span className="text-sm font-bold text-white tracking-wider">
                 (College Project) Java android based app using News API
-              </span>
-            </div>
-          </div>
-          <div
-            style={{ backgroundImage: `url(${kellbookf})` }} data-aos="zoom-in" data-aos-delay="900"
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            {/* Hover Effects */}
-            <div className="opacity-0 p-3 text-center group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                Kell's Books
-              </span>
-              <div className="text-center">
-                <a href="https://github.com/kevinkellyyyy/kellsbooks" target="_blank" rel="noopener noreferrer">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Detail
-                  </button>
-                </a>
-              </div>
-              <span className="text-sm font-bold text-white tracking-wider">
-                (College Project) Java android based for searching books detail, save to favorite.
               </span>
             </div>
           </div>          
