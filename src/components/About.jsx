@@ -18,11 +18,8 @@ const About = () => {
             <div data-aos="fade-left">
               <p>
               You can call me Kevin or Kelly as my friend's from college call's me by my middle name cause
-              there are too many Kevins LOL.
-              I'm currently working at PT. Kreasi Kode Digital (Codify) using mainly Angular JS. However, Lately, I've also been 
-              studying React js again during my free time at work and it's libraries, 
-              including when I created this personal website. Because during my internship I used to use it, 
-              even at my current job I've got a project using React Native.
+              there are too many Kevins LOL. I'm a software engineer focused on Front-end development who 
+              can work in team, adaptive, creative, and always learning in any condition and circumstances
               Besides of programming things, I like to explore some new tech stuff, riding motorcycles, and watching movies.
               </p>  
             </div>
