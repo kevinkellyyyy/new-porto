@@ -6,7 +6,11 @@ import angular from "../assets/angular.png";
 import react from "../assets/react.png";
 import bootstrap from "../assets/boostrap.png";
 import tailwind from "../assets/tailwind.png";
-import python from "../assets/python.png";
+import ant from "../assets/antdesign.png";
+import laravel from "../assets/laravel.png";
+import next from "../assets/nextjs.png";
+import vue from "../assets/vue.png";
+import reduxsaga from "../assets/reduxSaga.png";
 
 const Skill = () => {
   return (
@@ -43,18 +47,39 @@ const Skill = () => {
             <p className="my-4">JAVASCRIPT</p>
           </div>
           <div
-            data-aos="zoom-in" data-aos-delay="400"
+            data-aos="zoom-in" data-aos-delay="500"
             className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
           >
-            <img className="w-20 mx-auto" src={angular} alt="HTML icon" />
-            <p className="my-4">ANGULAR (JS & Ionic)</p>
+            <img className="w-20 mx-auto" src={react} alt="HTML icon" />
+            <p className="my-4">REACT JS</p>
           </div>
           <div
             data-aos="zoom-in" data-aos-delay="500"
             className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
           >
-            <img className="w-20 mx-auto" src={react} alt="HTML icon" />
-            <p className="my-4">REACT (JS & Native)</p>
+            <img className="w-20 mx-auto" src={reduxsaga} alt="HTML icon" />
+            <p className="my-4">REDUX SAGA</p>
+          </div>
+          <div
+            data-aos="zoom-in" data-aos-delay="400"
+            className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+          >
+            <img className="w-20 mx-auto" src={vue} alt="HTML icon" />
+            <p className="my-4">VUE JS</p>
+          </div>
+          <div
+            data-aos="zoom-in" data-aos-delay="400"
+            className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+          >
+            <img className="w-20 mx-auto" src={next} alt="HTML icon" />
+            <p className="my-4">NEXT JS</p>
+          </div>
+          <div
+            data-aos="zoom-in" data-aos-delay="400"
+            className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+          >
+            <img className="w-20 mx-auto" src={laravel} alt="HTML icon" />
+            <p className="my-4">LARAVEL</p>
           </div>
           <div
             data-aos="zoom-in" data-aos-delay="600"
@@ -64,6 +89,13 @@ const Skill = () => {
             <p className="my-4">BOOSTRAP</p>
           </div>
           <div
+            data-aos="zoom-in" data-aos-delay="600"
+            className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+          >
+            <img className="w-20 mx-auto" src={ant} alt="HTML icon" />
+            <p className="my-4">ANT DESIGN</p>
+          </div>
+          <div
             data-aos="zoom-in" data-aos-delay="700"
             className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
           >
@@ -71,11 +103,11 @@ const Skill = () => {
             <p className="my-4">TAILWIND</p>
           </div>
           <div
-            data-aos="zoom-in" data-aos-delay="800"
+            data-aos="zoom-in" data-aos-delay="400"
             className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
           >
-            <img className="w-20 mx-auto" src={python} alt="HTML icon" />
-            <p className="my-4">PYTHON</p>
+            <img className="w-20 mx-auto" src={angular} alt="HTML icon" />
+            <p className="my-4">ANGULAR JS</p>
           </div>
         </div>
       </div>

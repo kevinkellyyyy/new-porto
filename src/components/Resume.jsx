@@ -12,11 +12,46 @@ const Resume = () => {
           </div>
           <div className="flex flex-col sm:flex-row gap-6 mt-8 text-justify">
             <div className="w-2/2 sm:w-1/3 flex flex-col gap-6 text-right text-lg" data-aos="fade-right" data-aos-delay="50">
-              Since September 2020
+              June 2022 - Present
             </div>
             <div className="flex flex-col w-2/2 sm:w-2/3">
               <div data-aos="fade-left" data-aos-delay="100">
-                <p className="text-2xl font-bold">Front-End Developer</p>
+                <p className="text-2xl font-bold">Front-End Engineer</p>
+                <p className="text-xl mt-2">PT. Sejahtera Lunaria Annua (Koinworks)</p>
+              </div>
+              <ul>
+                <li className="px-0 pt-2">
+                  <ul className="list-disc">
+                    <li className="ml-5 pt-2 pr-0" data-aos="fade-left" data-aos-delay="200">
+                      Successfully developed and deployed Business Calculator Webview for business user to calculate their Cost of Goods Sold and Break Even Point using React JS + Bootstrap
+                    </li>
+                    <li className="ml-5 pt-2 pr-0" data-aos="fade-left" data-aos-delay="250">
+                      Develop Influencer Marketplace to help business user find influencer for their product endorsement using Next JS
+                    </li>
+                    <li className="ml-5 pt-2 pr-0" data-aos="fade-left" data-aos-delay="300">
+                      Successfully developed and deployed Business Dashboard & Explore Page in Backoffice for add new feature menu with it's category in Business Account using Laravel + Vue JS
+                    </li>
+                    <li className="ml-5 pt-2 pr-0" data-aos="fade-left" data-aos-delay="350">
+                      Maintaining Koinbill Product Backoffice and revamp in transaction history and sub product CRUD using Laravel + Vue JS
+                    </li>
+                    <li className="ml-5 pt-2 pr-0" data-aos="fade-left" data-aos-delay="350">
+                      Maintaining NEO Backoffice feature config using React JS + Ant Design
+                    </li>
+                    <li className="ml-5 pt-2 pr-0" data-aos="fade-left" data-aos-delay="350">
+                      Maintaining NEO Payment Link Webview hotfixes React JS + Ant Design
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-6 mt-8 text-justify">
+            <div className="w-2/2 sm:w-1/3 flex flex-col gap-6 text-right text-lg" data-aos="fade-right" data-aos-delay="50">
+              September 2020 - May 2022
+            </div>
+            <div className="flex flex-col w-2/2 sm:w-2/3">
+              <div data-aos="fade-left" data-aos-delay="100">
+                <p className="text-2xl font-bold">Front-End Engineer</p>
                 <p className="text-xl mt-2">PT. Kreasi Kode Digital (Codify - MacroAd)</p>
               </div>
               <ul>
