@@ -8,6 +8,7 @@ import Skill from "./components/Skill";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   useEffect(() => {
@@ -16,10 +17,10 @@ function App() {
 
   useEffect(() => {
     let samt = 0;
-      window.addEventListener('scroll', function() {
+    window.addEventListener("scroll", function () {
       samt <= 10 ? samt++ : Aos.refresh();
     });
-  })
+  });
 
   return (
     <div>
@@ -29,6 +30,7 @@ function App() {
       <Skill />
       <Project />
       <Resume />
+      <Testimonials />
       <Contact />
     </div>
   );
