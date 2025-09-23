@@ -9,7 +9,9 @@ import {
   FaSteam,
 } from "react-icons/fa";
 import { MdAlternateEmail } from "react-icons/md";
+import { RiNotionFill } from "react-icons/ri";
 import { Link } from "react-scroll";
+import { CONTACTS } from "../utils/constants";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -132,66 +134,23 @@ const Navbar = () => {
       {/* social icons */}
       <div className="hidden md:flex fixed flex-col top-[35%] left-0">
         <ul>
-          <li className="w-[168px] h-[60px] flex justify-beetween items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#0e76a8]">
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="https://www.linkedin.com/in/kevin-isyanta-b5962117b/"
-              target="_blank"
-              rel="noopener noreferrer"
+          {CONTACTS.map(({ id, url, icon, content, bgColor, cColor }) => (
+            <li
+              key={id}
+              className="w-[280px] h-[60px] flex justify-beetween items-center ml-[-220px] hover:ml-[0px] duration-30"
+              style={{ backgroundColor: bgColor }}
             >
-              LinkedIn <FaLinkedin size={30} />
-            </a>
-          </li>
-          <li className="w-[168px] h-[60px] flex justify-beetween items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#171515]">
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="https://github.com/kevinkellyyyy"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub <FaGithub size={30} />
-            </a>
-          </li>
-          <li className="w-[168px] h-[60px] flex justify-beetween items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#25d366]">
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="https://wa.me/6282297017693"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              WhatsApp <FaWhatsapp size={30} />
-            </a>
-          </li>
-          <li className="w-[168px] h-[60px] flex justify-beetween items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#ea4355]">
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="mailto:kellyisyanta@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Email <MdAlternateEmail size={30} />
-            </a>
-          </li>
-          <li className="w-[168px] h-[60px] flex justify-beetween items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#8134af]">
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="https://www.instagram.com/kevinkellyyyy"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Instagram <FaInstagram size={30} />
-            </a>
-          </li>
-          <li className="w-[168px] h-[60px] flex justify-beetween items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#122832]">
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="https://steamcommunity.com/id/zhypr"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Steam <FaSteam size={30} />
-            </a>
-          </li>
+              <a
+                className={`flex justify-between items-center w-full ${cColor}`}
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="text-[16px]">{content}</div>
+                <div className="text-[26px]">{icon}</div>
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </div>

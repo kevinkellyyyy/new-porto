@@ -1,13 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { send } from "emailjs-com";
-import {
-  FaLinkedin,
-  FaGithub,
-  FaInstagram,
-  FaWhatsapp,
-  FaSteam,
-} from "react-icons/fa";
-import { MdAlternateEmail } from "react-icons/md";
+import { CONTACTS } from "../utils/constants";
 
 const Contact = () => {
   const [toSend, setToSend] = useState({
@@ -64,66 +57,20 @@ const Contact = () => {
             Contact
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center py-8">
-            <div>
-              <a
-                className="flex items-center w-full text-gray-300"
-                href="https://www.linkedin.com/in/kevin-isyanta-b5962117b/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedin size={30} /> &nbsp;Kevin Isyanta
-              </a>
-            </div>
-            <div>
-              <a
-                className="flex items-center w-full text-gray-300"
-                href="https://github.com/kevinkellyyyy"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaGithub size={30} /> &nbsp;kevinkellyyyy
-              </a>
-            </div>
-            <div>
-              <a
-                className="flex items-center w-full text-gray-300"
-                href="https://wa.me/6282297017693"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaWhatsapp size={30} /> &nbsp;082297017693
-              </a>
-            </div>
-            <div>
-              <a
-                className="flex items-center w-full text-gray-300"
-                href="mailto:kellyisyanta@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <MdAlternateEmail size={30} /> &nbsp;kellyisyanta@gmail.com
-              </a>
-            </div>
-            <div>
-              <a
-                className="flex items-center w-full text-gray-300"
-                href="https://www.instagram.com/kevinkellyyyy"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaInstagram size={30} /> &nbsp;@kevinkellyyyy
-              </a>
-            </div>
-            <div>
-              <a
-                className="flex items-center w-full text-gray-300"
-                href="https://steamcommunity.com/id/zhypr"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaSteam size={30} /> &nbsp;zhypr
-              </a>
-            </div>
+            {CONTACTS.map(({ id, url, icon, content }) => (
+              <div key={id}>
+                <a
+                  className="flex items-center w-full text-gray-300"
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="text-[30px]">{icon}</div>
+                  &nbsp;
+                  {content}
+                </a>
+              </div>
+            ))}
           </div>
           <p className="text-gray-300 py-4">
             Submit the form below or shoot me an email - kellyisyanta@gmail.com
