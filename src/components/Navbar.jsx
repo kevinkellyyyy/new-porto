@@ -1,15 +1,5 @@
-import React, { useState } from "react";
-import {
-  FaBars,
-  FaTimes,
-  FaLinkedin,
-  FaGithub,
-  FaInstagram,
-  FaWhatsapp,
-  FaSteam,
-} from "react-icons/fa";
-import { MdAlternateEmail } from "react-icons/md";
-import { RiNotionFill } from "react-icons/ri";
+import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { CONTACTS } from "../utils/constants";
 
@@ -76,22 +66,22 @@ const Navbar = () => {
             : "hidden"
         }
       >
-        <li className="py-6 text-4xl border-0 hover:border-b-2 hover:border-gray-50">
+        <li className="py-6 text-2xl md:text-4xl border-0 hover:border-b-2 hover:border-gray-50">
           <Link onClick={handleClick} to="home" smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li className="py-6 text-4xl border-0 hover:border-b-2 hover:border-gray-50">
+        <li className="py-6 text-2xl md:text-4xl border-0 hover:border-b-2 hover:border-gray-50">
           <Link onClick={handleClick} to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li className="py-6 text-4xl border-0 hover:border-b-2 hover:border-gray-50">
+        <li className="py-6 text-2xl md:text-4xl border-0 hover:border-b-2 hover:border-gray-50">
           <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
             Skills
           </Link>
         </li>
-        <li className="py-6 text-4xl border-0 hover:border-b-2 hover:border-gray-50">
+        <li className="py-6 text-2xl md:text-4xl border-0 hover:border-b-2 hover:border-gray-50">
           <Link
             onClick={handleClick}
             to="project"
@@ -102,7 +92,7 @@ const Navbar = () => {
             Project
           </Link>
         </li>
-        <li className="py-6 text-4xl border-0 hover:border-b-2 hover:border-gray-50">
+        <li className="py-6 text-2xl md:text-4xl border-0 hover:border-b-2 hover:border-gray-50">
           <Link
             onClick={handleClick}
             to="resume"
@@ -113,7 +103,7 @@ const Navbar = () => {
             Work Experience
           </Link>
         </li>
-        <li className="py-6 text-4xl border-0 hover:border-b-2 hover:border-gray-50">
+        <li className="py-6 text-2xl md:text-4xl border-0 hover:border-b-2 hover:border-gray-50">
           <Link
             onClick={handleClick}
             to="testimonials"
@@ -124,7 +114,7 @@ const Navbar = () => {
             Recommendations
           </Link>
         </li>
-        <li className="py-6 text-4xl border-0 hover:border-b-2 hover:border-gray-50">
+        <li className="py-6 text-2xl md:text-4xl border-0 hover:border-b-2 hover:border-gray-50">
           <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
             Contact
           </Link>

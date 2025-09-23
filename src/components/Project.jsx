@@ -2,10 +2,13 @@ import { PROJECTS } from "../utils/constants";
 
 const Project = () => {
   return (
-    <div name="project" className="w-full h-full text-gray-300 bg-[#0a192f]">
+    <div
+      name="project"
+      className="w-full min-h-screen text-gray-300 bg-[#0a192f]"
+    >
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full pb-10">
         <div className="pb-8" data-aos="fade-right">
-          <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
+          <p className="text-2xl md:text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
             Project
           </p>
           <p className="py-6">Check out some of my Project</p>
