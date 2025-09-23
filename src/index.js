@@ -3,6 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 // ReactDOM.render(
 //   <React.StrictMode>
@@ -19,3 +20,6 @@ root.render(
     <App />
   </React.StrictMode>
 )
+
+// Register Service Worker for PWA
+serviceWorkerRegistration.register();
