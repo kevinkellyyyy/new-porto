@@ -17,10 +17,22 @@ function App() {
 
   useEffect(() => {
     let samt = 0;
-    window.addEventListener("scroll", function () {
-      samt <= 10 ? samt++ : Aos.refresh();
-    });
-  });
+
+    const handleScroll = () => {
+      if (samt <= 10) {
+        samt++;
+      } else {
+        Aos.refresh();
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    // Cleanup function to remove event listener
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []); // Add dependency array to run only once
 
   return (
     <div>

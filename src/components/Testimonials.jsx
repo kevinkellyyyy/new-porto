@@ -5,10 +5,10 @@ import { TESTIMONIALS } from "../utils/constants";
 const Testimonials = () => {
   return (
     <div name="testimonials" className="w-full bg-[#0a192f] text-gray-300">
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
+      <div className="md:max-w-[1000px] mx-auto flex flex-col justify-center w-full">
         <div className="pb-8 my-5">
           <div className="text-center" data-aos="fade-left">
-            <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
+            <p className="text-2xl md:text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
               Recommendations
             </p>
           </div>
@@ -69,7 +69,7 @@ const Testimonials = () => {
               {TESTIMONIALS.map((testimoni) => (
                 <div
                   key={testimoni.id}
-                  className="bg-[#112240] px-12 py-8 rounded-lg shadow-lg relative"
+                  className="bg-[#112240] px-4 md:px-12 py-8 rounded-lg shadow-lg relative"
                   data-aos="fade-up"
                 >
                   <a
@@ -77,7 +77,7 @@ const Testimonials = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <div className="flex items-center align-center sm:items-start min-w-[140px]">
+                    <div className="flex sm:items-start min-w-[140px]">
                       <img
                         src={testimoni.image}
                         alt={testimoni.name}
@@ -100,7 +100,7 @@ const Testimonials = () => {
                     <div className="absolute -bottom-4 -right-2 text-6xl text-pink-600 font-serif leading-none rotate-180">
                       "
                     </div>
-                    <p className="text-gray-300 text-lg my-4 whitespace-pre-line relative z-10 px-4">
+                    <p className="text-gray-300 text-sm md:text-md my-4 whitespace-pre-line relative z-10 px-4">
                       {testimoni.testimonial}
                     </p>
                   </div>

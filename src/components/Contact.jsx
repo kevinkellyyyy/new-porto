@@ -45,7 +45,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-screen bg-[#0a192f] flex justify-center items-center p-4"
+      className="w-full min-h-screen bg-[#0a192f] flex justify-center items-center p-4"
     >
       <form
         onSubmit={onSubmit}
@@ -53,7 +53,7 @@ const Contact = () => {
         data-aos="fade-right"
       >
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300">
+          <p className="text-2xl md:text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300">
             Contact
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center py-8">
