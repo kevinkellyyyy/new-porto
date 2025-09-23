@@ -6,7 +6,7 @@ const PWAInstallButton = () => {
   const { isInstallable, isInstalled, installPWA } = usePWAInstall();
 
   if (!isInstallable || isInstalled) {
-    // return null;
+    return null;
   }
 
   const handleInstall = async () => {
@@ -23,7 +23,7 @@ const PWAInstallButton = () => {
       aria-label="Install Portfolio App"
     >
       <HiDownload className="w-5 h-5" />
-      <span className="hidden sm:inline">Install App</span>
+      <span className="hidden sm:inline">Save App</span>
     </button>
   );
 };
