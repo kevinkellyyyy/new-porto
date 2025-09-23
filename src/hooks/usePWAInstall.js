@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 export const usePWAInstall = () => {
   const [deferredPrompt, setDeferredPrompt] = useState(null);
@@ -7,7 +7,10 @@ export const usePWAInstall = () => {
 
   useEffect(() => {
     // Check if app is already installed
-    if (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) {
+    if (
+      window.matchMedia &&
+      window.matchMedia("(display-mode: standalone)").matches
+    ) {
       setIsInstalled(true);
     }
 
@@ -25,12 +28,15 @@ export const usePWAInstall = () => {
       setDeferredPrompt(null);
     };
 
-    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
-    window.addEventListener('appinstalled', handleAppInstalled);
+    window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
+    window.addEventListener("appinstalled", handleAppInstalled);
 
     return () => {
-      window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
-      window.removeEventListener('appinstalled', handleAppInstalled);
+      window.removeEventListener(
+        "beforeinstallprompt",
+        handleBeforeInstallPrompt
+      );
+      window.removeEventListener("appinstalled", handleAppInstalled);
     };
   }, []);
 
@@ -40,16 +46,16 @@ export const usePWAInstall = () => {
     try {
       deferredPrompt.prompt();
       const choiceResult = await deferredPrompt.userChoice;
-      
-      if (choiceResult.outcome === 'accepted') {
+
+      if (choiceResult.outcome === "accepted") {
         setIsInstalled(true);
         setIsInstallable(false);
       }
-      
+
       setDeferredPrompt(null);
-      return choiceResult.outcome === 'accepted';
+      return choiceResult.outcome === "accepted";
     } catch (error) {
-      console.error('Error installing PWA:', error);
+      console.error("Error installing PWA:", error);
       return false;
     }
   };
@@ -57,6 +63,6 @@ export const usePWAInstall = () => {
   return {
     isInstallable,
     isInstalled,
-    installPWA
+    installPWA,
   };
 };
