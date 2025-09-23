@@ -9,6 +9,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Testimonials from "./components/Testimonials";
+import PWAInstallButton from "./components/PWAInstallButton";
 
 function App() {
   useEffect(() => {
@@ -44,6 +45,7 @@ function App() {
       <Resume />
       <Testimonials />
       <Contact />
+      <PWAInstallButton />
     </div>
   );
 }
