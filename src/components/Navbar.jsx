@@ -9,7 +9,7 @@ import {
   FaSteam,
 } from "react-icons/fa";
 import { MdAlternateEmail } from "react-icons/md";
-import { Link } from "react-scroll"
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -50,6 +50,11 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="border-0 hover:border-b-2 hover:border-gray-50">
+          <Link to="testimonials" smooth={true} offset={-80} duration={500}>
+            Recommendations
+          </Link>
+        </li>
+        <li className="border-0 hover:border-b-2 hover:border-gray-50">
           <Link to="contact" smooth={true} duration={500}>
             Contact
           </Link>
@@ -85,13 +90,36 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="py-6 text-4xl border-0 hover:border-b-2 hover:border-gray-50">
-          <Link onClick={handleClick} to="project" smooth={true}offset={-80}  duration={500}>
+          <Link
+            onClick={handleClick}
+            to="project"
+            smooth={true}
+            offset={-80}
+            duration={500}
+          >
             Project
           </Link>
         </li>
         <li className="py-6 text-4xl border-0 hover:border-b-2 hover:border-gray-50">
-          <Link onClick={handleClick} to="resume" smooth={true} offset={-80} duration={500}>
+          <Link
+            onClick={handleClick}
+            to="resume"
+            smooth={true}
+            offset={-80}
+            duration={500}
+          >
             Work Experience
+          </Link>
+        </li>
+        <li className="py-6 text-4xl border-0 hover:border-b-2 hover:border-gray-50">
+          <Link
+            onClick={handleClick}
+            to="testimonials"
+            smooth={true}
+            offset={-80}
+            duration={500}
+          >
+            Recommendations
           </Link>
         </li>
         <li className="py-6 text-4xl border-0 hover:border-b-2 hover:border-gray-50">
@@ -107,7 +135,9 @@ const Navbar = () => {
           <li className="w-[168px] h-[60px] flex justify-beetween items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#0e76a8]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="https://www.linkedin.com/in/kevin-isyanta-b5962117b/" target="_blank" rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/kevin-isyanta-b5962117b/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               LinkedIn <FaLinkedin size={30} />
             </a>
@@ -115,7 +145,9 @@ const Navbar = () => {
           <li className="w-[168px] h-[60px] flex justify-beetween items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#171515]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="https://github.com/kevinkellyyyy" target="_blank" rel="noopener noreferrer"
+              href="https://github.com/kevinkellyyyy"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               GitHub <FaGithub size={30} />
             </a>
@@ -123,7 +155,9 @@ const Navbar = () => {
           <li className="w-[168px] h-[60px] flex justify-beetween items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#25d366]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="https://wa.me/6282297017693" target="_blank" rel="noopener noreferrer"
+              href="https://wa.me/6282297017693"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               WhatsApp <FaWhatsapp size={30} />
             </a>
@@ -131,7 +165,9 @@ const Navbar = () => {
           <li className="w-[168px] h-[60px] flex justify-beetween items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#ea4355]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="mailto:kellyisyanta@gmail.com" target="_blank" rel="noopener noreferrer"
+              href="mailto:kellyisyanta@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Email <MdAlternateEmail size={30} />
             </a>
@@ -139,7 +175,9 @@ const Navbar = () => {
           <li className="w-[168px] h-[60px] flex justify-beetween items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#8134af]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="https://www.instagram.com/kevinkellyyyy" target="_blank" rel="noopener noreferrer"
+              href="https://www.instagram.com/kevinkellyyyy"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Instagram <FaInstagram size={30} />
             </a>
@@ -147,7 +185,9 @@ const Navbar = () => {
           <li className="w-[168px] h-[60px] flex justify-beetween items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#122832]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="https://steamcommunity.com/id/zhypr" target="_blank" rel="noopener noreferrer"
+              href="https://steamcommunity.com/id/zhypr"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Steam <FaSteam size={30} />
             </a>
