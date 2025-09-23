@@ -1,9 +1,50 @@
+// asset for testimonial section
 import maszul from "../assets/testimoni/maszul.jpeg";
 import idham from "../assets/testimoni/idham.jpeg";
 import masshamir from "../assets/testimoni/masshamir.jpeg";
 import arham from "../assets/testimoni/arham.jpeg";
 import ilham from "../assets/testimoni/ilham.jpeg";
 import akbar from "../assets/testimoni/akbar.jpeg";
+// asset for skill section
+import html from "../assets/skill/html.png";
+import sass from "../assets/skill/sass.png";
+import typescript from "../assets/skill/typescript.svg";
+import angular from "../assets/skill/angular.png";
+import react from "../assets/skill/react.png";
+import tailwind from "../assets/skill/tailwind.png";
+import ant from "../assets/skill/antdesign.png";
+import next from "../assets/skill/nextjs.png";
+import vue from "../assets/skill/vue.png";
+import redux from "../assets/skill/redux.svg";
+import vite from "../assets/skill/vite.svg";
+import jest from "../assets/skill/jest.png";
+import git from "../assets/skill/git.svg";
+import lighthouse from "../assets/skill/lighthouse.svg";
+import flagsmith from "../assets/skill/flagsmith.png";
+import firebase from "../assets/skill/firebase.svg";
+// asset for projects section
+import kellsblog from "../assets/projects/kellsblog.png";
+import multicursor from "../assets/projects/multicursor.png";
+import linistoref from "../assets/projects/linistoref.jpg";
+import miniemployeemng from "../assets/projects/miniemployeemng.png";
+import pokedex from "../assets/projects/pokedex.png";
+import jakmallpayment from "../assets/projects/jakmallpayment.png";
+import sentimenanf from "../assets/projects/sentimenanf.jpg";
+import kellsmoviezf from "../assets/projects/kellsmoviezf.jpg";
+import kellnewsf from "../assets/projects/kellnewsf.jpg";
+import moviewatchlist from "../assets/projects/moviewatchlist.JPG";
+import kellsocmed from "../assets/projects/kellsocmed.JPG";
+import potretbudayaf from "../assets/projects/potretbudayaf.jpg";
+import freecodecamp from "../assets/projects/freecodecamp.JPG";
+import {
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaSteam,
+  FaWhatsapp,
+} from "react-icons/fa";
+import { MdAlternateEmail } from "react-icons/md";
+import { RiNotionFill } from "react-icons/ri";
 
 export const WORK_EXPERIENCES = [
   {
@@ -142,5 +183,347 @@ Any team would be lucky to have Kevin—his combination of skill, dedication, an
     image: akbar,
     testimonial:
       "Kevin is a great frontend engineer, especially with React. He always pays attention to detail and creates clean, high-quality UI. He’s also very eager to learn new things and improve his skills. Working with him is always a great experience. reliable, skilled, and passionate about frontend development.",
+  },
+];
+
+export const CONTACTS = [
+  {
+    id: 1,
+    platform: "LinkedIn",
+    url: "https://www.linkedin.com/in/kevin-isyanta-b5962117b/",
+    icon: <FaLinkedin />,
+    content: "Kevin Kelly Isyanta",
+    bgColor: "#0e76a8",
+    cColor: "text-white",
+  },
+  {
+    id: 2,
+    platform: "GitHub",
+    url: "https://github.com/kevinkellyyyy",
+    icon: <FaGithub />,
+    content: "kevinkellyyyy",
+    bgColor: "#171515",
+    cColor: "text-white",
+  },
+  {
+    id: 3,
+    platform: "WhatsApp",
+    url: "https://wa.me/6282297017693",
+    icon: <FaWhatsapp />,
+    content: "+6282297017693",
+    bgColor: "#25d366",
+    cColor: "text-black",
+  },
+  {
+    id: 4,
+    platform: "Email",
+    url: "mailto:kellyisyanta@gmail.com",
+    icon: <MdAlternateEmail />,
+    content: "kellyisyanta@gmail.com",
+    bgColor: "#ea4355",
+    cColor: "text-white",
+  },
+  {
+    id: 5,
+    platform: "Instagram",
+    url: "https://www.instagram.com/kevinkellyyyy",
+    icon: <FaInstagram />,
+    content: "@kevinkellyyyy",
+    bgColor: "#8134af",
+    cColor: "text-white",
+  },
+  {
+    id: 6,
+    platform: "Notion",
+    url: "https://kevinkellyyyy.notion.site/Welcome-to-Kell-s-Notion-23e9ff12179c801eb033cb7fd6af84f3",
+    icon: <RiNotionFill />,
+    content: "Kell's Notion",
+    bgColor: "#ffc526",
+    cColor: "text-black",
+  },
+  {
+    id: 7,
+    platform: "Steam",
+    url: "https://steamcommunity.com/id/zhypr",
+    icon: <FaSteam />,
+    content: "zhypr",
+    bgColor: "#122832",
+    cColor: "text-white",
+  },
+];
+
+export const SKILL = [
+  {
+    id: 1,
+    name: "HTML",
+    icon: html,
+    titleClassName: "my-4",
+  },
+  {
+    id: 2,
+    name: "SASS",
+    icon: sass,
+    titleClassName: "mt-5",
+  },
+  {
+    id: 3,
+    name: "TYPESCRIPT",
+    icon: typescript,
+    titleClassName: "my-4",
+  },
+  {
+    id: 4,
+    name: "REACT JS",
+    icon: react,
+    titleClassName: "my-4",
+  },
+  {
+    id: 5,
+    name: "ANT DESIGN",
+    icon: ant,
+    titleClassName: "my-4",
+  },
+  {
+    id: 6,
+    name: "REDUX TOOLKIT",
+    icon: redux,
+    titleClassName: "my-4",
+  },
+  {
+    id: 7,
+    name: "VITE",
+    icon: vite,
+    titleClassName: "my-4",
+  },
+  {
+    id: 8,
+    name: "JEST",
+    icon: jest,
+    titleClassName: "my-4",
+  },
+  {
+    id: 9,
+    name: "GIT",
+    icon: git,
+    titleClassName: "mt-6",
+  },
+  {
+    id: 10,
+    name: "FIREBASE",
+    icon: firebase,
+    titleClassName: "my-4",
+  },
+  {
+    id: 11,
+    name: "FLAGSMITH",
+    icon: flagsmith,
+    titleClassName: "mt-6",
+  },
+  {
+    id: 12,
+    name: "LIGHTHOUSE",
+    icon: lighthouse,
+    titleClassName: "mt-6",
+  },
+  {
+    id: 13,
+    name: "NEXT JS",
+    icon: next,
+    titleClassName: "my-4",
+  },
+  {
+    id: 14,
+    name: "TAILWIND CSS",
+    icon: tailwind,
+    titleClassName: "my-4",
+  },
+  {
+    id: 15,
+    name: "ANGULAR",
+    icon: angular,
+    titleClassName: "my-4",
+  },
+  {
+    id: 16,
+    name: "VUE JS",
+    icon: vue,
+    titleClassName: "my-4",
+  },
+];
+
+export const PROJECTS = [
+  // -nextjs Blogs (next js + shadcn/ui + prisma orm + neon db + kinde auth)
+  // -live multi user cursor realtime view (websocket)
+  // -store inventory management system (react + supabase)
+  // -Linistore (angular)
+  // -(movie watchlist) the movie db
+  // -freeCodeCamp projects (vanilla js + html + css) (
+  // Random Quotes
+  // Markdown Previewer
+  // Drum Machine
+  // JavaScript Calculator
+  // Pomodoro Clock
+  // )
+  // takehome test project (
+  // -employee management system (angular)
+  // -test sprout (pokedex)
+  // -test jakmal (simple e-commerce shipping and payment)
+  // -test codify (simple ig clone)
+  // )
+  // college projects (
+  // -Skripsi
+  // -Ragam Budaya
+  // -kell's moviez (vanilla js with fetch api from movie db)
+  // -kell's blog (java android)
+  // )
+  {
+    id: 1,
+    name: "Kell's Blog",
+    description:
+      "Create and share your stories effortlessly! With our platform, anyone can explore and read blog posts, while registered users can sign up to publish, edit, and manage their own blogs. Whether you just want to browse as a guest or build your own blogging space, the choice is yours. Start reading, start writing, start connecting.",
+    technologies: [
+      "Next.js",
+      "Tailwind",
+      "Prisma ORM",
+      "Neon DB",
+      "Kinde Auth",
+    ],
+    image: kellsblog,
+    liveDemo: "https://crud-blog-neon-db-prisma-orm.vercel.app/",
+    sourceCode: "https://github.com/kevinkellyyyy/crud-blog-neon-db-prisma-orm",
+  },
+  {
+    id: 2,
+    name: "Live Multi-User Cursor Realtime Position View",
+    description:
+      "This simple React + Node.js app uses WebSocket to bring multiple users together on one screen. Just enter your name, and your live cursor appears instantly alongside others. Built as a learning project with a client–server monorepo, it’s a fun demo of WebSocket in action (not a full production release, just for exploration).",
+    technologies: ["React.js", "Node.js", "WebSocket", "Express.js"],
+    image: multicursor,
+    liveDemo: "https://live-cursor-multi-user.vercel.app/",
+    sourceCode: "https://github.com/kevinkellyyyy/live-cursor-multi-user",
+  },
+  {
+    id: 3,
+    name: "Mini Inventory Management System (On Progress)",
+    description:
+      "A simple inventory management system built with React and Supabase. It allows users to manage products, categories, and suppliers with full CRUD functionality. Features include product listing, category management, supplier management, and responsive design for seamless use across devices.",
+    technologies: ["React.js", "Supabase", "Ant Design", "Vite"],
+    image: "",
+    liveDemo: "",
+    sourceCode:
+      "https://github.com/kevinkellyyyy/store-inventory-with-supabase",
+  },
+  {
+    id: 4,
+    name: "LINISTORE",
+    description:
+      "LINISTORE is a B2B e-commerce platform that helps small shops and merchants in Indonesia to buy product stocks directly from suppliers. It offers a wide range of products, competitive prices, and convenient ordering and delivery options.",
+    technologies: ["Angular", "Bootstrap", "TypeScript"],
+    image: linistoref,
+    liveDemo: "https://linistore.id",
+    sourceCode: null,
+  },
+  {
+    id: 5,
+    name: "Movie Watchlist",
+    description:
+      "A simple React app that allows users to search for movies and TV shows using The Movie Database (TMDb) API. Users can add movies and shows to their watchlist, view details, and manage their list with local storage.",
+    technologies: ["React.js", "Redux", "The Movie DB API"],
+    image: moviewatchlist,
+    liveDemo: "https://kevinkellyyyy-movie-watchlist.vercel.app/",
+    sourceCode: "https://github.com/kevinkellyyyy/movie-watchlist",
+  },
+  {
+    id: 6,
+    name: "FreeCodeCamp Projects",
+    description:
+      "A collection of mini projects built using vanilla JavaScript, HTML, and CSS as part of the FreeCodeCamp curriculum. Projects include a Random Quote Generator, Markdown Previewer, Drum Machine, JavaScript Calculator, and Pomodoro Clock.",
+    technologies: ["JavaScript", "HTML", "CSS"],
+    image: freecodecamp,
+    liveDemo: "https://kevinkellyyyy-fcc-projects.vercel.app/",
+    sourceCode: "",
+  },
+  {
+    id: 7,
+    name: "Employee Management System (Take-Home Test Project)",
+    description:
+      "A simple employee management system built with Angular as part of a take-home test project. It allows users to view, add, edit, and delete employee records with a user-friendly interface.",
+    technologies: ["Angular", "Material UI", "Tailwind CSS"],
+    image: miniemployeemng,
+    liveDemo: "https://employee-management-mini-proj.vercel.app/",
+    sourceCode:
+      "https://github.com/kevinkellyyyy/employee-management-mini-proj",
+  },
+  {
+    id: 8,
+    name: "POKEDEX (Take-Home Test Project)",
+    description:
+      "A simple Pokedex app built with React as part of a take-home test project. It allows users to search for Pokemon, view details, and manage their favorite list using the PokeAPI.",
+    technologies: ["React.js", "PokeAPI", "Bootstrap"],
+    image: pokedex,
+    liveDemo: "https://test-sprout.vercel.app/",
+    sourceCode: "https://github.com/kevinkellyyyy/test-sprout",
+  },
+  {
+    id: 9,
+    name: "Kell's Socmed (Take-Home Test Project)",
+    description:
+      "Angular JS based simple socmed app (instagram clone) that display list user and their detail post with dummy.io API.",
+    technologies: ["Angular", "Bootstrap"],
+    image: kellsocmed,
+    liveDemo: "https://kells-socmed.vercel.app/",
+    sourceCode: "https://github.com/kevinkellyyyy/codify-test-frontend",
+  },
+  {
+    id: 10,
+    name: "Simple Payment & Shipping E-Commerce (Take-Home Test Project)",
+    description:
+      "A simple e-commerce web app for selecting shipping options and payment methods, built with React JS as part of a take-home test project.",
+    technologies: ["React.js", "Redux"],
+    image: jakmallpayment,
+    liveDemo: "https://tes-jakmall.vercel.app/",
+    sourceCode: "https://github.com/kevinkellyyyy/tes-jakmall",
+  },
+  {
+    id: 11,
+    name: "Sentiment analysis in Ecommerce Platform (Thesis Project)",
+    description:
+      "Using Multilayer Perceptron (MLP) for ML classification algorithm, and FastText for word embedding",
+    technologies: ["Python", "Machine Learning", "Flask", "HTML", "CSS"],
+    image: sentimenanf,
+    liveDemo: "",
+    sourceCode:
+      "https://www.warse.org/IJATCSE/static/pdf/file/ijatcse171942020.pdf",
+  },
+  {
+    id: 12,
+    name: "Kell's Moviez (College Project)",
+    description:
+      "A simple movie browsing web app using The Movie Database (TMDb) API built with vanilla JavaScript, HTML, and CSS.",
+    technologies: ["JavaScript", "HTML", "CSS", "The Movie DB API"],
+    image: kellsmoviezf,
+    liveDemo: "https://kellsmovies.surge.sh/",
+    sourceCode: "https://github.com/kevinkellyyyy/kellsmoviez",
+  },
+  {
+    id: 13,
+    name: "Kell's News (College Project)",
+    description:
+      "Java android based app using News API to display news headlines and details.",
+    technologies: ["Java", "Android", "News API"],
+    image: kellnewsf,
+    liveDemo: "",
+    sourceCode: "https://github.com/kevinkellyyyy/kellnews",
+  },
+  {
+    id: 14,
+    name: "Ragam Budaya (College Project)",
+    description:
+      "Angular Ionic based app for educational and fun, take and share your pic with included fun frame and take the Indonesian knowledge quiz",
+    technologies: ["Ionic Angular", "Cordova", "Android"],
+    image: potretbudayaf,
+    liveDemo:
+      "https://play.google.com/store/apps/details?id=app.hatchoko.ragambudaya",
+    sourceCode: "https://github.com/agustinusnathaniel/ragambudaya",
   },
 ];

@@ -1,20 +1,8 @@
-import React from "react";
-import linistoref from "../assets/linistoref.jpg";
-import sentimenanf from "../assets/sentimenanf.jpg";
-import kellsmoviezf from "../assets/kellsmoviezf.jpg";
-import reactjslocalcrudf from "../assets/reactjslocalcrudf.JPG";
-import kellnewsf from "../assets/kellnewsf.jpg";
-import moviewatchlist from "../assets/moviewatchlist.JPG";
-import kellsocmed from "../assets/kellsocmed.JPG";
-import potretbudayaf from "../assets/potretbudayaf.jpg";
-import freecodecamp from "../assets/freecodecamp.JPG";
+import { PROJECTS } from "../utils/constants";
 
 const Project = () => {
   return (
-    <div
-      name="project"
-      className="w-full text-gray-300 bg-[#0a192f]"
-    >
+    <div name="project" className="w-full h-full text-gray-300 bg-[#0a192f]">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full pb-10">
         <div className="pb-8" data-aos="fade-right">
           <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
@@ -24,225 +12,62 @@ const Project = () => {
         </div>
 
         {/* Container */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4" data-aos="zoom-in">
-          {/* Grid Item */}
-          <div
-            style={{ backgroundImage: `url(${linistoref})` }} data-aos="zoom-in" data-aos-delay="50"
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            {/* Hover Effects */}
-            <div className="opacity-0 p-3 text-center group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                LiniStore
-              </span>
-              <div className="text-center">
-                <a href="https://linistore.id/" target="_blank" rel="noopener noreferrer">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Detail
-                  </button>
-                </a>
+        <div
+          className="grid sm:grid-cols-2 md:grid-cols-3 gap-4"
+          data-aos="zoom-in"
+        >
+          {PROJECTS.map((project) => (
+            <div
+              key={project.id}
+              style={{ backgroundImage: `url(${project.image})` }}
+              data-aos="zoom-in"
+              data-aos-delay="0"
+              className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center content-div"
+            >
+              <div className="absolute flex bottom-2 left-2 opacity-1 text-center group-hover:opacity-0 w-full">
+                {project.technologies.map((tech) => (
+                  <span
+                    key={tech}
+                    className="text-[10px] text-white mr-1 p-1 bg-gray-800 rounded"
+                  >
+                    {tech}
+                  </span>
+                ))}
               </div>
-              <span className="text-sm font-bold text-white tracking-wider">
-                Angular JS based website for small merchant or stall to buy their product's stocks with consignment option
-              </span>
-            </div>
-          </div>
-          {/* Grid Item */}
-          <div
-            style={{ backgroundImage: `url(${moviewatchlist})` }} data-aos="zoom-in" data-aos-delay="450"
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            {/* Hover Effects */}
-            <div className="opacity-0 p-3 text-center group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                Movie Watchlist
-              </span>
-              <div className="text-center">
-                <a href="https://kevinkellyyyy-movie-watchlist.vercel.app/" target="_blank" rel="noopener noreferrer">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
-                </a>
+              <div className="opacity-0 text-center group-hover:opacity-100 w-full">
+                <span className="text-xl font-bold text-white">
+                  {project.name}
+                </span>
+                <div className="text-center">
+                  {project.liveDemo && (
+                    <a
+                      href={project.liveDemo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-md">
+                        Demo
+                      </button>
+                    </a>
+                  )}
+                  {project.sourceCode && (
+                    <a
+                      href={project.sourceCode}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-md">
+                        Detail
+                      </button>
+                    </a>
+                  )}
+                </div>
+                <span className="text-xs text-white">
+                  {project.description}
+                </span>
               </div>
-              <span className="text-sm font-bold text-white tracking-wider">
-                Simple movie watchlist app with search movie through fetch API from TMDB and react contex with local storage
-              </span>
             </div>
-          </div>
-          {/* Grid Item */}
-          <div
-            style={{ backgroundImage: `url(${kellsocmed})` }} data-aos="zoom-in" data-aos-delay="100"
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            {/* Hover Effects */}
-            <div className="opacity-0 p-3 text-center group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                Kell's Socmed
-              </span>
-              <div className="text-center">
-                <a href="https://kells-socmed.vercel.app/" target="_blank" rel="noopener noreferrer">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
-                </a>
-                <a href="https://github.com/kevinkellyyyy/codify-test-frontend" target="_blank" rel="noopener noreferrer">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Detail
-                  </button>
-                </a>
-              </div>
-              <span className="text-sm font-bold text-white tracking-wider">
-                Angular JS based simple socmed app that display list user and their detail post with dummy.io API
-              </span>
-            </div>
-          </div>
-          {/* Grid Item */}
-          <div
-            style={{ backgroundImage: `url(${sentimenanf})` }} data-aos="zoom-in" data-aos-delay="150"
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            {/* Hover Effects */}
-            <div className="opacity-0 py-3 text-center group-hover:opacity-100">
-              <span className="text-md font-bold text-white tracking-wider">
-                (Thesis Project) Sentiment analysis in Ecommerce Platform
-              </span>
-              <div className="text-center">
-                <a href="http://www.warse.org/IJATCSE/static/pdf/file/ijatcse171942020.pdf" target="_blank" rel="noopener noreferrer">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Published Paper
-                  </button>
-                </a>
-                <a href="https://drive.google.com/drive/folders/1IX16XzhDV_HpDFSXWKMGeEmz_UT6-pFM?usp=sharing" target="_blank" rel="noopener noreferrer">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Detail
-                  </button>
-                </a>
-              </div>
-              <span className="text-sm font-bold text-white tracking-wider">
-                Using Multilayer Perceptron (MLP) for ML classification algorithm, and FastText for word embedding
-              </span>
-            </div>
-          </div>
-          {/* Grid Item */}
-          <div
-            style={{ backgroundImage: `url(${freecodecamp})` }} data-aos="zoom-in" data-aos-delay="200"
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            {/* Hover Effects */}
-            <div className="opacity-0 p-3 text-center group-hover:opacity-100">
-              <span className="text-md font-bold text-white tracking-wider">
-                FreeCodeCamp Projects
-              </span>
-              <div className="text-center">
-                <a href="https://kevinkellyyyy-fcc-projects.vercel.app/" target="_blank" rel="noopener noreferrer">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Detail
-                  </button>
-                </a>
-              </div>
-              <span className="text-sm font-bold text-white tracking-wider">
-                FreeCodeCamp Front End Development Libraries certification project
-              </span>
-            </div>
-          </div>
-          {/* Grid Item */}
-          <div
-            style={{ backgroundImage: `url(${potretbudayaf})` }} data-aos="zoom-in" data-aos-delay="250"
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            {/* Hover Effects */}
-            <div className="opacity-0 p-3 text-center group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                Ragam Budaya
-              </span>
-              <div className="text-center">
-                <a href="https://play.google.com/store/apps/details?id=app.hatchoko.ragambudaya" target="_blank" rel="noopener noreferrer">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Detail
-                  </button>
-                </a>
-              </div>
-              <span className="text-sm font-bold text-white tracking-wider">
-                (College Project) Angular Ionic based app for educational and fun, take and share your pic with included fun frame and take the Indonesian knowledge quiz
-              </span>
-            </div>
-          </div>
-          {/* Grid Item */}
-          <div
-            style={{ backgroundImage: `url(${kellsmoviezf})` }} data-aos="zoom-in" data-aos-delay="300"
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            {/* Hover Effects */}
-            <div className="opacity-0 p-3 text-center group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                Kell's Moviez
-              </span>
-              <div className="text-center">
-                <a href="https://kellsmovies.surge.sh/" target="_blank" rel="noopener noreferrer">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
-                </a>
-                <a href="https://github.com/kevinkellyyyy/kellsmoviez" target="_blank" rel="noopener noreferrer">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Detail
-                  </button>
-                </a>
-              </div>
-              <span className="text-sm font-bold text-white tracking-wider">
-                (College Project) Vanilla JS based project, display list of now playing movies with it's detail page using Movie DB API
-              </span>
-            </div>
-          </div>
-          {/* Grid Item */}
-          <div
-            style={{ backgroundImage: `url(${reactjslocalcrudf})` }} data-aos="zoom-in" data-aos-delay="350"
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            {/* Hover Effects */}
-            <div className="opacity-0 p-3 text-center group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                Simple React JS contact CRUD
-              </span>
-              <div className="text-center">
-                <a href="https://kevinkellyyyy.github.io/kevinkelly-phi-frontend-test/" target="_blank" rel="noopener noreferrer">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
-                </a>
-                <a href="https://github.com/kevinkellyyyy/kevinkelly-phi-frontend-test" target="_blank" rel="noopener noreferrer">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Detail
-                  </button>
-                </a>
-              </div>
-              <span className="text-sm font-bold text-white tracking-wider">
-                React JS based simple constact CRUD project with local state
-              </span>
-            </div>
-          </div>
-          {/* Grid Item */}
-          <div
-            style={{ backgroundImage: `url(${kellnewsf})` }} data-aos="zoom-in" data-aos-delay="400"
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            {/* Hover Effects */}
-            <div className="opacity-0 p-3 text-center group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                Kell's News
-              </span>
-              <div className="text-center">
-                <a href="https://github.com/kevinkellyyyy/kellsnews" target="_blank" rel="noopener noreferrer">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Detail
-                  </button>
-                </a>
-              </div>
-              <span className="text-sm font-bold text-white tracking-wider">
-                (College Project) Java android based app using News API
-              </span>
-            </div>
-          </div>          
+          ))}
         </div>
       </div>
     </div>

@@ -12,7 +12,7 @@ import Testimonials from "./components/Testimonials";
 
 function App() {
   useEffect(() => {
-    Aos.init({ duration: 1000 });
+    Aos.init({ duration: 700 });
   }, []);
 
   useEffect(() => {
