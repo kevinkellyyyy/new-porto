@@ -81,7 +81,7 @@ const Resume = () => {
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full">
         <div className="pb-8 my-5">
           <div className="text-center" data-aos="fade-left">
-            <p className="text-2xl md:text-2xl md:text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
+            <p className="text-2xl md:text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
               Work Experience
             </p>
           </div>
