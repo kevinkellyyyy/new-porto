@@ -9,9 +9,9 @@ const Project = () => {
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full pb-10">
         <div className="pb-8" data-aos="fade-right">
           <p className="text-2xl md:text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
-            Project
+            Projects
           </p>
-          <p className="py-6">Check out some of my Project</p>
+          <p className="py-6">Check out some of my Projects</p>
         </div>
 
         {/* Container */}
@@ -27,11 +27,11 @@ const Project = () => {
               data-aos-delay="0"
               className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center content-div"
             >
-              <div className="absolute flex bottom-2 left-2 opacity-1 text-center group-hover:opacity-0 w-full">
+              <div className="absolute flex flex-wrap bottom-2 left-2 opacity-1 text-center group-hover:opacity-0 w-full">
                 {project.technologies.map((tech) => (
                   <span
                     key={tech}
-                    className="text-[10px] text-white mr-1 p-1 bg-gray-800 rounded"
+                    className="text-[10px] text-gray-100 mr-1 mb-1 p-1 bg-pink-600 rounded"
                   >
                     {tech}
                   </span>

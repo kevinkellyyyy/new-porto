@@ -24,7 +24,10 @@ import flagsmith from "../assets/skill/flagsmith.png";
 import firebase from "../assets/skill/firebase.svg";
 // asset for projects section
 import kellsblog from "../assets/projects/kellsblog.png";
+import skribblclone from "../assets/projects/skribblclone.jpeg";
 import multicursor from "../assets/projects/multicursor.png";
+import appinfinid from "../assets/projects/appinfinid.png";
+import apppijar from "../assets/projects/apppijar.png";
 import linistoref from "../assets/projects/linistoref.jpg";
 import miniemployeemng from "../assets/projects/miniemployeemng.png";
 import pokedex from "../assets/projects/pokedex.png";
@@ -354,7 +357,10 @@ export const SKILL = [
 export const PROJECTS = [
   // -nextjs Blogs (next js + shadcn/ui + prisma orm + neon db + kinde auth)
   // -live multi user cursor realtime view (websocket)
-  // -store inventory management system (react + supabase)
+  // -live multi user drawing board (websocket socket.io)
+  // -infinid customer web app (react + typescript + redux toolkit + custom ui-kit + feature flag + jest + lighthouse + google analytics + google maps)
+  // -pijar customer web app (react + typescript + redux toolkit + ant design + feature flag + jest + lighthouse + adjust attribution)
+  // -store inventory management system (react + supabase) (on progress)
   // -Linistore (angular)
   // -(movie watchlist) the movie db
   // -freeCodeCamp projects (vanilla js + html + css) (
@@ -403,6 +409,55 @@ export const PROJECTS = [
     sourceCode: "https://github.com/kevinkellyyyy/live-cursor-multi-user",
   },
   {
+    id: 15,
+    name: "Simple Skribbl.io drawing game clone",
+    description:
+      "This simple Next + Node.js app uses socket.io to bring multiple users drawing together on one screen. Just open and it will broadcast to all open client window. Built as a learning project with a client–server monorepo, it’s a fun demo of socket.io in action (not a full production release, just for exploration, need more polish such as add username and cursor).",
+    technologies: ["Next.js", "Node.js", "Socket.io", "Express.js"],
+    image: skribblclone,
+    liveDemo: "https://simple-skribblio-clone.vercel.app/",
+    sourceCode: "https://github.com/kevinkellyyyy/simple-skribblio-clone",
+  },
+  {
+    id: 16,
+    name: "Infinid Customer Web App",
+    description:
+      "In this project, I led the revamp from the initial vendor version up to version 4, adapting it to business needs while also introducing several improvements. These included the addition of a custom private UI-kit library, mobile responsiveness, attribution tools, A/B Testing, feature flagging, file upload with real-time size progress, web accessibility and caching optimizations, Unit testing (jest), as well as Google Maps pinpoint integration.",
+    technologies: [
+      "React.js",
+      "TypeScript",
+      "Redux Toolkit",
+      "Custom UI-Kit",
+      "Feature Flag",
+      "Jest",
+      "Lighthouse",
+      "Google Analytics",
+      "Google Maps",
+    ],
+    image: appinfinid,
+    liveDemo: null,
+    sourceCode: "https://app.infinid.id/",
+  },
+  {
+    id: 17,
+    name: "Pijar Customer Web App",
+    description:
+      "I was involved from the initiation of the repository. My responsibilities included building entry forms for prospective debtors, document upload features, integrating OCR for KTP & KK. with a strong focus on mobile view since it's main purpose was to serve as a backup during the transition period when the mobile app difficult timeline. Implementing adjusted attribution, unit testing, accessibility optimizations, and feature flagging.",
+    technologies: [
+      "React.js",
+      "TypeScript",
+      "Redux Toolkit",
+      "Ant Design",
+      "Feature Flag",
+      "Jest",
+      "Lighthouse",
+      "Adjust Attribution",
+    ],
+    image: apppijar,
+    liveDemo: null,
+    sourceCode: "https://app.pijar.com/",
+  },
+  {
     id: 3,
     name: "Mini Inventory Management System (On Progress)",
     description:
@@ -420,8 +475,8 @@ export const PROJECTS = [
       "LINISTORE is a B2B e-commerce platform that helps small shops and merchants in Indonesia to buy product stocks directly from suppliers. It offers a wide range of products, competitive prices, and convenient ordering and delivery options.",
     technologies: ["Angular", "Bootstrap", "TypeScript"],
     image: linistoref,
-    liveDemo: "https://linistore.id",
-    sourceCode: null,
+    liveDemo: null,
+    sourceCode: "https://linistore.id",
   },
   {
     id: 5,
