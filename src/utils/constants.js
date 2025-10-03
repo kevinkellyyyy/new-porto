@@ -22,8 +22,11 @@ import git from "../assets/skill/git.svg";
 import lighthouse from "../assets/skill/lighthouse.svg";
 import flagsmith from "../assets/skill/flagsmith.png";
 import firebase from "../assets/skill/firebase.svg";
+import websocketlogo from "../assets/skill/websocketlogo.png";
+import socketiologo from "../assets/skill/socketiologo.png";
 // asset for projects section
 import kellsblog from "../assets/projects/kellsblog.png";
+import realtimeusertracking from "../assets/projects/realtimeusertracking.jpeg";
 import skribblclone from "../assets/projects/skribblclone.jpeg";
 import multicursor from "../assets/projects/multicursor.png";
 import appinfinid from "../assets/projects/appinfinid.png";
@@ -342,12 +345,24 @@ export const SKILL = [
   },
   {
     id: 15,
+    name: "WEBSOCKET",
+    icon: websocketlogo,
+    titleClassName: "my-4",
+  },
+  {
+    id: 16,
+    name: "SOCKET.IO",
+    icon: socketiologo,
+    titleClassName: "my-4",
+  },
+  {
+    id: 17,
     name: "ANGULAR",
     icon: angular,
     titleClassName: "my-4",
   },
   {
-    id: 16,
+    id: 18,
     name: "VUE JS",
     icon: vue,
     titleClassName: "my-4",
@@ -399,14 +414,14 @@ export const PROJECTS = [
     sourceCode: "https://github.com/kevinkellyyyy/crud-blog-neon-db-prisma-orm",
   },
   {
-    id: 2,
-    name: "Live Multi-User Cursor Realtime Position View",
+    id: 18,
+    name: "Realtime User Tracking APP",
     description:
-      "This simple React + Node.js app uses WebSocket to bring multiple users together on one screen. Just enter your name, and your live cursor appears instantly alongside others. Built as a learning project with a client–server monorepo, it’s a fun demo of WebSocket in action (not a full production release, just for exploration).",
-    technologies: ["React.js", "Node.js", "WebSocket", "Express.js"],
-    image: multicursor,
-    liveDemo: "https://live-cursor-multi-user.vercel.app/",
-    sourceCode: "https://github.com/kevinkellyyyy/live-cursor-multi-user",
+      "This simple Next + Node.js app uses websocket to bring multiple users location together on one screen. Just enter your name, show all user live long lat location live. Built as a learning project with a client–server monorepo, it’s a fun demo of websocket in action (not a full production release, just for exploration, need more polish such as add username and cursor).",
+    technologies: ["Next.js", "Node.js", "Websocket", "Express.js"],
+    image: realtimeusertracking,
+    liveDemo: "https://user-tracking-app-peach.vercel.app/",
+    sourceCode: "https://github.com/kevinkellyyyy/user-tracking-app",
   },
   {
     id: 15,
@@ -417,6 +432,16 @@ export const PROJECTS = [
     image: skribblclone,
     liveDemo: "https://simple-skribblio-clone.vercel.app/",
     sourceCode: "https://github.com/kevinkellyyyy/simple-skribblio-clone",
+  },
+  {
+    id: 2,
+    name: "Live Multi-User Cursor Realtime Position View",
+    description:
+      "This simple React + Node.js app uses WebSocket to bring multiple users together on one screen. Just enter your name, and your live cursor appears instantly alongside others. Built as a learning project with a client–server monorepo, it’s a fun demo of WebSocket in action (not a full production release, just for exploration).",
+    technologies: ["React.js", "Node.js", "WebSocket", "Express.js"],
+    image: multicursor,
+    liveDemo: "https://live-cursor-multi-user.vercel.app/",
+    sourceCode: "https://github.com/kevinkellyyyy/live-cursor-multi-user",
   },
   {
     id: 16,
